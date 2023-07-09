@@ -37,4 +37,4 @@ if (process.env.NODE_ENV === "production") {
 app.use(notFound);
 app.use(errorHandler);
 
-app.listen(port, () => console.log(`Server started on port ${port}`.bgWhite.black));
+app.listen(port, () => console.log(`Server started in ${process.env.NODE_ENV} mode on port ${port}`.bgWhite.black));
